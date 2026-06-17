@@ -4,6 +4,8 @@ import com.spring.authservice.dtos.UserRequestDto;
 import com.spring.authservice.entity.User;
 import com.spring.authservice.repository.UserRepository;
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -11,6 +13,9 @@ public class AuthServiceImp implements AuthService {
 
     final UserRepository userRepository;
     private final ModelMapper modelMapper;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     public AuthServiceImp(UserRepository userRepository, ModelMapper modelMapper) {
         this.userRepository = userRepository;
@@ -25,6 +30,7 @@ public class AuthServiceImp implements AuthService {
 
         User user = modelMapper.map(userRequestDto, User.class);
 
+        user.setPassword(passwordEncoder.encode(userRequestDto.getPassword()));
 
         userRepository.save(user);
 

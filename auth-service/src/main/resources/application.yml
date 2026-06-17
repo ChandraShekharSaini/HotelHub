@@ -2,6 +2,18 @@ spring:
   application:
     name: auth-service
   data:
-      mongodb:
-        uri: mongodb://localhost:27017/hotelhub
+    mongodb:
+      uri: mongodb://localhost:27017/hotelhub
 
+  jwt:
+    ExpirationTimeInMille: 3000000
+    JWT_SECREAT_KEY: kjkjgb678678gvh5646535423265468fgdcfgdgrf
+
+logging:
+  level:
+    com: DEBUG
+  file:
+    name: ./logs/logging.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"

@@ -10,4 +10,6 @@ import org.springframework.stereotype.Repository;
 public interface UserRepository extends MongoRepository<User, String> {
 
     boolean existsByEmail(@NotBlank(message = "Email is required") @Email(message = "Please provide a valid email address") String email);
+
+    User findByEmail(String userEmail);
 }
