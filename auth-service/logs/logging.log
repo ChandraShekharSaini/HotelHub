@@ -522,3 +522,28 @@ java.lang.NullPointerException: Cannot invoke "org.springframework.security.cryp
 2026-06-17 12:41:18 - Unauthorized access to /error - Full authentication is required to access this resource
 2026-06-17 12:43:47 - Commencing graceful shutdown. Waiting for active requests to complete
 2026-06-17 12:43:47 - Graceful shutdown complete
+2026-06-17 12:44:06 - Starting AuthServiceApplication using Java 21.0.7 with PID 6628 (C:\Users\saini\Downloads\HotelHub\auth-service\build\classes\java\main started by saini in C:\Users\saini\Downloads\HotelHub\auth-service)
+2026-06-17 12:44:06 - Running with Spring Boot v3.5.15, Spring v6.2.19
+2026-06-17 12:44:06 - No active profile set, falling back to 1 default profile: "default"
+2026-06-17 12:44:09 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-06-17 12:44:09 - Finished Spring Data repository scanning in 207 ms. Found 1 MongoDB repository interface.
+2026-06-17 12:44:11 - Tomcat initialized with port 8080 (http)
+2026-06-17 12:44:11 - Starting service [Tomcat]
+2026-06-17 12:44:11 - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-06-17 12:44:11 - Initializing Spring embedded WebApplicationContext
+2026-06-17 12:44:11 - Root WebApplicationContext: initialization completed in 4817 ms
+2026-06-17 12:44:12 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.7+8-LTS-245"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@628b819d, com.mongodb.Jep395RecordCodecProvider@478b0739, com.mongodb.KotlinCodecProvider@2cca611f]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-06-17 12:44:12 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=27, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=118998900, minRoundTripTimeNanos=0}
+2026-06-17 12:44:14 - Filter 'authTokenFilter' configured for use
+2026-06-17 12:44:14 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-06-17 12:44:16 - Tomcat started on port 8080 (http) with context path '/'
+2026-06-17 12:44:16 - Started AuthServiceApplication in 11.732 seconds (process running for 14.539)
+2026-06-17 12:44:22 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-17 12:44:22 - Initializing Servlet 'dispatcherServlet'
+2026-06-17 12:44:22 - Completed initialization in 4 ms
+2026-06-17 12:44:22 - Authentication token: null
+2026-06-17 12:45:04 - Authentication token: null
+2026-06-17 12:45:04 - ===========Login request received==========chandra@gmail.com
+2026-06-17 12:45:04 - User Details chandra@gmail.com
+2026-06-17 12:45:04 - UserName: chandra@gmail.com
+2026-06-17 12:45:04 - Password: $2a$10$uHfUoVi8Fctfg./6tD9JPe.EevMQ1A/ZuMMxIvvLrEyHnMVB/7lqm
